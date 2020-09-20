@@ -17,9 +17,9 @@ __meta__ = {
 [node name="Panel" type="Panel" parent="."]
 modulate = Color( 0.972549, 0.956863, 0.956863, 1 )
 margin_left = 1.58578
-margin_top = -2.82843
+margin_top = -3.57758
 margin_right = 1021.59
-margin_bottom = 592.172
+margin_bottom = 591.423
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -118,11 +118,12 @@ margin_bottom = 364.64
 text = "INSTALL"
 
 [node name="lable2" type="RichTextLabel" parent="."]
-margin_left = 3.17157
-margin_top = 302.983
-margin_right = 436.172
-margin_bottom = 324.983
-text = "Package Name which You want to install From server ::See list ~~~>"
+margin_left = 4.99323
+margin_top = 264.749
+margin_right = 437.993
+margin_bottom = 308.749
+text = "Package Name which You want to install From server ::See list ~~~>
+Dont add .Amzx just package name"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -171,6 +172,9 @@ margin_left = 48.0
 margin_top = 49.0
 margin_right = 1009.0
 margin_bottom = 585.0
+custom_colors/folder_icon_modulate = Color( 0.0470588, 0.0196078, 0.87451, 1 )
+custom_colors/files_disabled = Color( 0.992157, 0.0196078, 0.0196078, 1 )
+custom_colors/file_icon_modulate = Color( 0.0392157, 0.984314, 0.968627, 1 )
 popup_exclusive = true
 window_title = "Open a File"
 resizable = true
@@ -179,28 +183,28 @@ dialog_hide_on_ok = true
 mode = 0
 access = 2
 show_hidden_files = true
-current_dir = "/home/amzker/Desktop/os/Amzx-Manager"
-current_path = "/home/amzker/Desktop/os/Amzx-Manager/"
+current_dir = "/home/amzker/Desktop/os/myapps/Amzx-Manager"
+current_path = "/home/amzker/Desktop/os/myapps/Amzx-Manager/"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="cache" type="Button" parent="."]
-margin_left = 155.657
-margin_top = 480.373
-margin_right = 292.657
-margin_bottom = 520.373
+margin_left = 156.846
+margin_top = 485.13
+margin_right = 293.846
+margin_bottom = 525.13
 text = "clear  cache"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="current" type="RichTextLabel" parent="."]
-margin_left = 1.41422
+margin_left = 2.20792
 margin_top = 5.65685
-margin_right = 284.414
+margin_right = 285.208
 margin_bottom = 45.6568
-text = "Current Amzx-Manager Version : 0.2 beta"
+text = "Current Amzx-Manager Version : 0.3 beta"
 __meta__ = {
 "_edit_use_anchors_": false
 }
