@@ -16,32 +16,39 @@ __meta__ = {
 
 [node name="Panel" type="Panel" parent="."]
 modulate = Color( 0.972549, 0.956863, 0.956863, 1 )
-margin_left = 1.58578
-margin_top = -3.57758
-margin_right = 1021.59
-margin_bottom = 591.423
+margin_left = 2.58578
+margin_top = -1.57758
+margin_right = 1022.59
+margin_bottom = 593.423
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button" type="Button" parent="Panel"]
-margin_left = 169.149
-margin_top = 119.61
-margin_right = 251.149
-margin_bottom = 150.61
+margin_left = 166.149
+margin_top = 55.61
+margin_right = 248.149
+margin_bottom = 86.61
 text = "update"
 __meta__ = {
 "_edit_use_anchors_": false,
 "_editor_description_": ""
 }
 
+[node name="showb" type="Button" parent="Panel"]
+margin_left = 342.0
+margin_top = 172.0
+margin_right = 414.0
+margin_bottom = 204.0
+text = "Show"
+
 [node name="HTTPRequest" type="HTTPRequest" parent="."]
 
 [node name="list" type="RichTextLabel" parent="."]
-margin_left = 453.414
-margin_top = 80.0
-margin_right = 1009.41
-margin_bottom = 512.0
+margin_left = 450.0
+margin_top = 81.0
+margin_right = 737.0
+margin_bottom = 517.0
 focus_mode = 2
 mouse_default_cursor_shape = 4
 fit_content_height = true
@@ -60,22 +67,44 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="VSeparator2" type="VSeparator" parent="."]
+margin_left = 740.47
+margin_top = 75.4142
+margin_right = 754.47
+margin_bottom = 527.414
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
-margin_left = 388.999
-margin_top = 54.3259
-margin_right = 1007.0
-margin_bottom = 74.3259
-tab_size = 9
-text = "                                                              Availible Packages"
+margin_left = 457.0
+margin_top = 40.0
+margin_right = 664.0
+margin_bottom = 92.0
+tab_size = 0
+text = "	                                                                   Packages in Repo
+										"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 769.213
+margin_top = 53.9706
+margin_right = 912.213
+margin_bottom = 89.9706
+tab_size = 0
+text = "Installed Packages"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="refresh" type="Button" parent="."]
-margin_left = 958.679
-margin_top = 53.8553
-margin_right = 1018.68
-margin_bottom = 73.8553
+margin_left = 447.0
+margin_top = 50.0
+margin_right = 507.0
+margin_bottom = 76.0
+hint_tooltip = "It will show how many Packages are in server"
 text = "Refresh"
 __meta__ = {
 "_edit_use_anchors_": false,
@@ -103,66 +132,35 @@ __meta__ = {
 
 [node name="pag" type="LineEdit" parent="."]
 margin_left = 5.17157
-margin_top = 332.338
+margin_top = 112.428
 margin_right = 338.172
-margin_bottom = 372.338
+margin_bottom = 152.428
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="infoline" type="LineEdit" parent="."]
+margin_left = 6.58578
+margin_top = 164.754
+margin_right = 339.586
+margin_bottom = 204.754
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Install" type="Button" parent="."]
-margin_left = 352.414
-margin_top = 336.64
-margin_right = 416.414
-margin_bottom = 364.64
+margin_left = 348.878
+margin_top = 121.68
+margin_right = 412.878
+margin_bottom = 149.68
 text = "INSTALL"
 
-[node name="lable2" type="RichTextLabel" parent="."]
-margin_left = 4.99323
-margin_top = 264.749
-margin_right = 437.993
-margin_bottom = 308.749
-text = "Package Name which You want to install From server ::See list ~~~>
-Dont add .Amzx just package name"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="update" type="RichTextLabel" parent="."]
-margin_left = 0.27211
-margin_top = 125.48
-margin_right = 175.272
-margin_bottom = 150.48
+margin_left = 2.27211
+margin_top = 60.48
+margin_right = 177.272
+margin_bottom = 85.48
 text = "  Update Amzx-Manager"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 15.2426
-margin_top = 409.451
-margin_right = 355.243
-margin_bottom = 436.451
-text = "Select File [LOCAL] which you want to install"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="LineEdit" type="LineEdit" parent="."]
-margin_left = 8.0
-margin_top = 426.551
-margin_right = 336.0
-margin_bottom = 466.551
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="selectfile" type="Button" parent="."]
-margin_left = 354.828
-margin_top = 433.965
-margin_right = 419.828
-margin_bottom = 461.965
-text = "SELECT"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -183,54 +181,87 @@ dialog_hide_on_ok = true
 mode = 0
 access = 2
 show_hidden_files = true
-current_dir = "/home/amzker/Desktop/os/myapps/Amzx-Manager"
-current_path = "/home/amzker/Desktop/os/myapps/Amzx-Manager/"
+current_dir = "/home/amzker/Desktop/os/OLD/extra/myapps/Amzx-Manager"
+current_path = "/home/amzker/Desktop/os/OLD/extra/myapps/Amzx-Manager/"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="cache" type="Button" parent="."]
-margin_left = 156.846
-margin_top = 485.13
-margin_right = 293.846
-margin_bottom = 525.13
+margin_left = 682.226
+margin_top = 545.941
+margin_right = 819.226
+margin_bottom = 585.941
 text = "clear  cache"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="current" type="RichTextLabel" parent="."]
-margin_left = 2.20792
-margin_top = 5.65685
-margin_right = 285.208
-margin_bottom = 45.6568
-text = "Current Amzx-Manager Version : 0.3 beta"
+margin_left = 5.20792
+margin_top = 1.65685
+margin_right = 288.208
+margin_bottom = 41.6568
+text = "Current Amzx-Manager Version : 0.4 stable"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="sr" type="RichTextLabel" parent="."]
-margin_left = 6.0
-margin_top = 28.0
-margin_right = 242.0
-margin_bottom = 68.0
+margin_left = 7.0
+margin_top = 26.0
+margin_right = 243.0
+margin_bottom = 66.0
 text = "Amzx-Manager Actual  version : "
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="srver" type="RichTextLabel" parent="."]
-margin_left = 210.828
-margin_top = 29.6568
-margin_right = 370.828
-margin_bottom = 64.6568
+margin_left = 207.828
+margin_top = 15.6568
+margin_right = 367.828
+margin_bottom = 50.6568
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="srvreq" type="HTTPRequest" parent="."]
+
+[node name="updatepkg" type="Button" parent="."]
+margin_left = 650.586
+margin_top = 46.7574
+margin_right = 724.586
+margin_bottom = 76.7574
+hint_tooltip = "will update list of Packages in server"
+text = "UPDATE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="instpkg" type="RichTextLabel" parent="."]
+margin_left = 751.0
+margin_top = 89.0
+margin_right = 1008.0
+margin_bottom = 509.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="infopkg" type="RichTextLabel" parent="."]
+margin_left = 15.3431
+margin_top = 209.757
+margin_right = 412.343
+margin_bottom = 582.757
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Panel/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/showb" to="." method="_on_showb_pressed"]
 [connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]
 [connection signal="pressed" from="refresh" to="." method="_on_refresh_pressed"]
 [connection signal="pressed" from="Install" to="." method="_on_Install_pressed"]
-[connection signal="button_up" from="selectfile" to="." method="_on_selectfile_button_up"]
 [connection signal="file_selected" from="FileDialog" to="." method="_on_FileDialog_file_selected"]
 [connection signal="pressed" from="cache" to="." method="_on_cache_pressed"]
 [connection signal="request_completed" from="srvreq" to="." method="_on_srvreq_request_completed"]
+[connection signal="pressed" from="updatepkg" to="." method="_on_updatepkg_pressed"]
